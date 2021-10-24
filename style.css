@@ -1,0 +1,214 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+  height: 100vh;
+  grid-template-rows: 50px 1fr;
+}
+
+.header {
+background-color: rgb(255, 255, 255);
+
+}
+
+.main {
+    background-color:#dae0e6;
+    overflow: scroll;
+    height: 100vh;
+    display: grid;
+  grid-template-columns: minmax(400px, 1000px);
+  justify-content: center;
+}
+
+.reddit-logo img {
+    width: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.main-content {
+    display: grid;
+    grid-template: 
+    "thumbnails  thumbnails" 200px
+    "posts news" 1fr /
+    1fr 300px;
+
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.header span {
+    position: relative;
+    bottom: 20px;
+}
+
+.profile {
+    position: absolute;
+    left: 1420px;
+    top: 10px;
+}
+
+.thumbnails {
+    grid-area: thumbnails;
+    background-color: #dae0e6;
+}
+
+.posts {
+    grid-area: posts;
+    background-color: blue;
+}
+
+.news {
+    grid-area: news;
+    background-color: #ffffff;
+    margin-top: 32px;
+}
+
+.trending {
+    display: grid;
+    margin-bottom: 10px;
+    background-color: #dae0e6;
+font-weight: lighter;
+}
+
+#thumbs {
+    width:100%;  
+ }
+ 
+ ul {
+    width:1fr;
+    list-style:none;
+ }
+ 
+ li {
+    float:left;
+    display:block;
+    width: 250px;
+    height: 250px;
+    
+    background-color:#dae0e6;
+ }
+
+
+
+ .sportnews {
+     display: grid;
+    grid-template-columns: 10px;
+    grid-template-rows: 80px;
+    text-align: start;
+    color: white;
+    background-color: #60001d;
+ }
+
+ .sportnews h3 {
+     padding-top: 30px;
+ }
+
+ .sport {
+     margin-top: 10px;
+     position: relative;
+     
+ }
+
+ .search-bar {
+     position: absolute;
+    left: 300px;
+    bottom: 710px;
+ }
+
+ .header .search-bar input {
+    width: 650px;
+  border-radius: 5px;
+  background-color: #f6f7f8;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  }
+
+  .posts {
+    grid-area: posts;
+    grid-gap: 80px;
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: #dae0e6;
+   
+  }
+
+  .header-2 {
+      position: relative;
+      bottom: 120px;
+      background-color: rgb(255, 255, 255);
+      height: 4em;   
+  }
+
+  .post {
+position: relative;
+bottom: 230px;
+background-color: rgb(255, 255, 255);
+display: grid;
+grid-template-columns: 40px 1fr;
+  }
+
+  .left {
+background-color: #f8f9fa;
+  }
+
+  .post .left button {
+    margin-left: 8px;
+    margin-top: 2px;
+  }
+  
+
+  .right {
+      background-color: rgb(255, 255, 255);
+  }
+
+  
+  .login {
+    position: absolute;
+    left: 1290px;
+    top: 10px;
+   
+    
+}
+
+.signup {
+    position: absolute;
+    left: 1350px;
+    top: 10px;
+}
+
+.header-2 .hot {
+    position: relative;
+    left: 20px;
+    top: 12px;
+}
+
+.header-2 .map {
+    position: relative;
+    left: 120px;
+    bottom: 25px;
+}
+
+.header-2 .new {
+    position: relative;
+    left: 270px;
+    bottom: 62px;
+}
+
+.sport .all {
+    position: relative;
+    left: 110px;
+    top: 10px;
+}
+
+.post .left h5 {
+padding-left: 8px;
+}
